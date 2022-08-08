@@ -11,6 +11,7 @@
 
 html, body{
     background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
 }
 
 /*------Layout-----*/
@@ -53,7 +54,7 @@ html, body{
 }
 #texto label textarea{
     width: 100%;
-    height: 400px;
+    height: 300px;
     background: transparent;
     border: none;
     padding-left: 8px;
@@ -73,11 +74,18 @@ html, body{
     align-items: center;
     gap: 8px;
 }
-#botoes .botao{
+.botao{
     padding: 15px;
     width: 100%;
     border-radius: 24px;
     border: 1px solid var(--color--main);
+    background-color: #ffffff;
+    color: var(--color--main);
+}
+.botao:hover{
+    background-color: var(--color--main);
+    color: #ffffff;
+    cursor: pointer;
 }
 
 #criptografar{
@@ -90,13 +98,48 @@ html, body{
     cursor: pointer;
 }
 
-#descriptografar{
-    background-color: #ffffff;
-    color: var(--color--main);
+
+
+
+
+
+
+/*------Resposta------*/
+#default{
+    background: #ffffff;
+    border-radius: 24px;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 15px 5px;
+}
+#default h2{}
+#default p{
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-#descriptografar:hover{
-    background-color: var(--color--main);
-    color: #ffffff;
-    cursor: pointer;
+
+#resposta{
+    background: #ffffff;
+    border-radius: 24px;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+}
+
+#resposta p{
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+.desativar{
+    display: none;
 }
