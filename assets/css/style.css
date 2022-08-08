@@ -23,14 +23,17 @@ body{
 
 .row{
     display: flex;
-    padding: 15px 5px;
+}
+
+
+/*------header------*/
+header .container img{
+    margin: 10px 0px 0px 0px;
 }
 
 
 /*------encriptador------*/
-#encriptador{
-    height: 80vh;
-}
+
 #encriptador .container{
     height: 100%;
 }
@@ -125,10 +128,12 @@ body{
     justify-content: center;
     align-items: center;
 }
-#default h2{}
 #default p{
     font-size: 14px;
     margin-top: 5px;
+}
+#vetor{
+    display: none;
 }
 
 
@@ -151,16 +156,32 @@ body{
 
 
 
-
-
-
-
 .desativar{
     display: none !important;
 }
 
 
+/*------footer------*/
+footer{
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color--main);
+}
+footer p{
+    color: #fff;
+    font: 12px;
+}
 
+footer p a{
+    text-decoration-color: #fff;
+    color: #fff; 
+}
+footer p a:hover{
+    text-decoration-color: #000;
+}
 
 /* Large devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
@@ -175,6 +196,9 @@ body{
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
+    #encriptador{
+        height: 85vh;
+    }
     #encriptador .container .row{
         flex-direction: row;
         justify-content: right;
