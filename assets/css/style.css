@@ -24,3 +24,79 @@ html, body{
     display: flex;
     padding: 5px;
 }
+
+
+/*------encriptador------*/
+#encriptador{}
+#encriptador .container{}
+#encriptador .container .row{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    width: 100%;
+}
+.col-8{}
+.col-4{}
+#texto label{
+    width: 100%;
+}
+#texto #info{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+#texto label textarea{
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    border: none;
+    padding-left: 8px;
+}
+#texto label textarea::placeholder{
+    color: var(--color--main);
+    font-weight: 600;
+    font-size: 24px;
+}
+#texto label textarea:focus{
+    outline: 0;
+}
+#botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+#botoes .botao{
+    padding: 15px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid var(--color--main);
+}
+
+#criptografar{
+    background-color: var(--color--main);
+    color: #ffffff;
+}
+#criptografar:hover{
+    background-color: #ffffff;
+    color: var(--color--main);
+    cursor: pointer;
+}
+
+#descriptografar{
+    background-color: #ffffff;
+    color: var(--color--main);
+}
+
+#descriptografar:hover{
+    background-color: var(--color--main);
+    color: #ffffff;
+    cursor: pointer;
+}
