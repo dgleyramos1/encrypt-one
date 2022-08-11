@@ -31,7 +31,7 @@ buttonDescrypt.addEventListener("click", () => {
     let result = descriptografar(texto);
     resposta.value = result;
     if(resposta.value){
-        conteudo.value = "Seu texto foi criptografado com sucesso!";
+        conteudo.value = "Seu texto foi descriptografado com sucesso!";
         document.getElementById("default").style.display = "none";
         containerResposta.style.display = "flex";
         setTimeout(function () {conteudo.value = ""}, 1200)
